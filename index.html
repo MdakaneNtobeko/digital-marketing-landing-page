@@ -6,6 +6,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Digital Marketing Landing Page</title>
 
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Lexend:100,200,300,regular,500,600,700,800,900"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Lato:100,100italic,300,300italic,regular,italic,700,700italic,900,900italic"
+      rel="stylesheet"
+    />
+
+    <!-- Font Awesome CDN -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
     <!-- CSS File -->
     <link rel="stylesheet" href="style.css" />
   </head>
@@ -18,12 +37,59 @@
 
         <!--nav links-->
         <ul class="links-container">
-          <li class="link-items"><a href="#" class="links">Home</a></li>
+          <li class="link-items">
+            <a href="#hero-section" class="links">Home</a>
+          </li>
           <li class="link-items"><a href="#" class="links">Services</a></li>
           <li class="link-items"><a href="#" class="links">About Us</a></li>
           <li class="link-items"><a href="#" class="links">Contact Us</a></li>
         </ul>
       </nav>
+
+      <!-- main section -->
+      <main id="hero-section">
+        <!-- hero section info -->
+        <div class="hero-info">
+          <h1 class="hero-heading">
+            Reach Your <span>Potential</span> Audience
+          </h1>
+          <p class="hero-paragraph">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia,
+            ratione. A dolore animi at ullam possimus quo rerum facilis
+            voluptatum.
+          </p>
+
+          <!-- action buttons -->
+          <div class="hero-action-buttons">
+            <a href="#" class="btn primary-btn">Contact Us</a>
+            <a href="#" class="btn secondary-btn">Discover</a>
+          </div>
+        </div>
+
+        <!-- hero section image container -->
+        <div class="hero-section-img-container">
+          <div class="background-ele"></div>
+
+          <img src="img/header.png" class="hero-img" alt="" />
+
+          <a href="#" class="hero-img-social-link">
+            <img src="img/youtube.png" alt="" />
+          </a>
+
+          <div class="subscribers">
+            <h1>1.50M+</h1>
+            <p>Subscribers</p>
+          </div>
+
+          <div class="hero-review">
+            <i class="fa-solid fa-quote-left"></i>
+            <p>
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nulla
+              debitis omnis excepturi.
+            </p>
+          </div>
+        </div>
+      </main>
     </header>
 
     <!-- scripts -->
