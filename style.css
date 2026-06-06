@@ -33,6 +33,7 @@
 
 html {
   font-size: 16px;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -401,4 +402,51 @@ section {
 .benefit-card:hover {
   background: var(--accent-color);
   transform: scale(0.98);
+}
+
+/* services section */
+
+.services-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+}
+
+.service-card {
+  border: 0.1rem solid var(--accent-color);
+  border-radius: 0.25rem;
+  padding: 1.5rem;
+  transition: 0.25s ease;
+}
+
+.service {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.service-img {
+  width: 3rem;
+  height: 3rem;
+  padding: 0.5rem;
+  background-color: var(--accent-color);
+  border-radius: 0.5rem;
+}
+
+.service-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.service-name {
+  font-size: 1.1rem;
+  font-weight: 400;
+  text-transform: capitalize;
+}
+
+.service-info {
+  font-size: 0.9rem;
+  line-height: 1.5rem;
 }
