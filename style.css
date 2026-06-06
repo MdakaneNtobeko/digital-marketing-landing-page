@@ -40,6 +40,7 @@ body {
   color: var(--primary-text-color);
   font-family: "Lexend", sans-serif;
   font-weight: 300;
+  overflow-x: hidden;
 }
 
 /* navbar */
@@ -258,6 +259,7 @@ section {
   font-size: 2rem;
   font-weight: 400;
   line-height: 3.25rem;
+  text-align: center;
 }
 
 .section-secondary-line {
@@ -399,7 +401,8 @@ section {
   font-size: 1.1rem;
 }
 
-.benefit-card:hover {
+.benefit-card:hover,
+.service-card:hover {
   background: var(--accent-color);
   transform: scale(0.98);
 }
@@ -449,4 +452,25 @@ section {
 .service-info {
   font-size: 0.9rem;
   line-height: 1.5rem;
+}
+
+.circle {
+  position: absolute;
+  pointer-events: none;
+  z-index: -1;
+  width: 10rem;
+  height: 10rem;
+  border-radius: 100%;
+  background-color: var(--accent-color);
+  opacity: 0.75;
+}
+
+.circle.right {
+  top: -3rem;
+  right: -3rem;
+}
+
+.circle.left {
+  bottom: -10rem;
+  left: -2rem;
 }
