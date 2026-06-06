@@ -177,7 +177,8 @@ body {
   background: var(--background-diagonal-gradients);
 }
 
-.hero-img-social-link {
+.hero-img-social-link,
+.about-img-social-link {
   position: absolute;
   padding: 1rem;
   width: 4rem;
@@ -188,7 +189,8 @@ body {
   z-index: 3;
 }
 
-.hero-img-social-link img {
+.hero-img-social-link img,
+.about-img-social-link img {
   width: 100%;
   height: 100%;
   object-fit: cover;
@@ -250,6 +252,13 @@ section {
   position: relative;
 }
 
+.section-title {
+  margin: 0.5rem 0;
+  font-size: 2rem;
+  font-weight: 400;
+  line-height: 3.25rem;
+}
+
 .section-secondary-line {
   text-align: center;
   margin-top: 1rem;
@@ -274,4 +283,122 @@ section {
   width: 100%;
   height: 100%;
   object-fit: cover;
+}
+
+/* about section */
+
+#about-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8rem;
+}
+
+.about-us-img-container {
+  position: relative;
+  display: flex;
+  width: 20rem;
+  height: 35rem;
+  flex: 0 0 auto;
+  justify-content: center;
+}
+
+.about-us-img {
+  width: 100%;
+  max-height: 100%;
+  background: var(--accent-color);
+  overflow: hidden;
+  border-radius: 10rem;
+}
+
+.about-us-img::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 20.5rem;
+  height: 35.5rem;
+  background: var(--background-gradients);
+  border-radius: 10rem;
+  z-index: -1;
+  transition: 0.25s;
+}
+
+.about-us-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 2;
+}
+
+.about-img-social-link:nth-child(2) {
+  right: 30%;
+  top: -5%;
+}
+
+.about-img-social-link:nth-child(3) {
+  left: -10%;
+  top: 20%;
+}
+
+.about-img-social-link:nth-child(4) {
+  left: 15%;
+  top: 30%;
+}
+.about-img-social-link:nth-child(5) {
+  right: 10%;
+  top: 20%;
+}
+
+/* About us */
+
+.about-us {
+  width: 100%;
+  min-width: 350px;
+}
+
+.about-us .section-secondary-line {
+  text-align: left;
+  margin-bottom: 0;
+}
+
+.about-us .section-title {
+  margin-bottom: 4rem;
+  text-align: left;
+}
+
+.benefit-card {
+  width: 100%;
+  height: 5rem;
+  margin-bottom: 2rem;
+  border: 0.1rem solid var(--accent-color);
+  border-radius: 0.5rem;
+  display: flex;
+  align-items: center;
+  transition: 0.25s ease;
+}
+
+.card-img {
+  width: 3rem;
+  height: 3rem;
+  overflow: hidden;
+  background: var(--accent-color);
+  border-radius: 0.4rem;
+  padding: 0.5rem;
+}
+
+.card-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.card-name {
+  font-size: 1.1rem;
+}
+
+.benefit-card:hover {
+  background: var(--accent-color);
+  transform: scale(0.98);
 }
