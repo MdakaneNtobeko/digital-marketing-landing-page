@@ -697,3 +697,29 @@ textarea {
   height: 100%;
   object-fit: cover;
 }
+
+.footer-links-container {
+  justify-self: end;
+}
+
+.footer-links-title {
+  text-transform: capitalize;
+  margin-bottom: 1rem;
+}
+
+.footer-links,
+.footer-text {
+  color: var(--primary-text-color);
+  text-decoration: none;
+  margin-bottom: 0.5rem;
+  display: block;
+  text-transform: capitalize;
+}
+
+.footer-text {
+  margin-bottom: 1rem;
+}
+
+.footer-links:hover {
+  color: var(--primary-color);
+}
