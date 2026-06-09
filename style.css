@@ -723,3 +723,14 @@ textarea {
 .footer-links:hover {
   color: var(--primary-color);
 }
+
+.copyright {
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+  text-align: center;
+  padding: 0.5rem;
+  color: var(--secondary-text-color);
+  background: var(--primary-color);
+}
