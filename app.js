@@ -1,3 +1,11 @@
+let toggleBtn = document.querySelector(".nav-toggler");
+let linksContainer = document.querySelector(".links-container");
+
+toggleBtn.addEventListener("click", () => {
+  toggleBtn.classList.toggle("active");
+  linksContainer.classList.toggle("active");
+});
+
 let faqs = [...document.querySelectorAll(".faq")];
 
 faqs.map((faq) => {
