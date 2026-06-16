@@ -15,3 +15,5 @@ faqs.map((faq) => {
     faq.classList.toggle("active");
   });
 });
+
+AOS.init();

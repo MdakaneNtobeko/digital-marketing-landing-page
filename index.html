@@ -25,6 +25,9 @@
       referrerpolicy="no-referrer"
     />
 
+    <!-- Animate on scroll library -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+
     <!-- CSS File -->
     <link rel="stylesheet" href="style.css" />
   </head>
@@ -80,18 +83,28 @@
         <div class="hero-section-img-container">
           <div class="background-ele"></div>
 
-          <img src="img/header.png" class="hero-img" alt="" />
+          <img
+            src="img/header.png"
+            data-aos="zoom-out"
+            class="hero-img"
+            alt=""
+          />
 
-          <a href="#" class="hero-img-social-link">
+          <a
+            href="#"
+            class="hero-img-social-link"
+            data-aos="zoom-out"
+            data-aos-delay="450"
+          >
             <img src="img/youtube.png" alt="" />
           </a>
 
-          <div class="subscribers">
+          <div class="subscribers" data-aos="zoom-out" data-aos-delay="300">
             <h1>1.50M+</h1>
             <p>Subscribers</p>
           </div>
 
-          <div class="hero-review">
+          <div class="hero-review" data-aos="zoom-out" data-aos-delay="600">
             <i class="fa-solid fa-quote-left"></i>
             <p>
               Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nulla
@@ -140,17 +153,38 @@
     <!-- About section -->
     <section id="about-section">
       <div class="about-us-img-container">
-        <div class="about-us-img">
-          <img src="img/about.png" alt="" />
+        <div class="about-us-img" data-aos="expand">
+          <img
+            src="img/about.png"
+            data-aos="zoom-out"
+            data-aos-delay="250"
+            alt=""
+          />
         </div>
 
-        <a href="#" class="about-img-social-link"
+        <a
+          href="#"
+          class="about-img-social-link"
+          data-aos="zoom-in-up"
+          data-aos-delay="250"
           ><img src="img/instagram.png" alt="" /></a
-        ><a href="#" class="about-img-social-link"
+        ><a
+          href="#"
+          class="about-img-social-link"
+          data-aos="zoom-in-up"
+          data-aos-delay="300"
           ><img src="img/facebook.png" alt="" /></a
-        ><a href="#" class="about-img-social-link"
+        ><a
+          href="#"
+          class="about-img-social-link"
+          data-aos="zoom-in-up"
+          data-aos-delay="350"
           ><img src="img/twitter.png" alt="" /></a
-        ><a href="#" class="about-img-social-link"
+        ><a
+          href="#"
+          class="about-img-social-link"
+          data-aos="zoom-in-up"
+          data-aos-delay="400"
           ><img src="img/youtube.png" alt=""
         /></a>
       </div>
@@ -361,21 +395,46 @@
     <!-- Contact Us -->
     <section id="contact-section">
       <div class="contact-us-img-container">
-        <img src="img/contact.png" alt="" class="contact-us-img" />
+        <img
+          src="img/contact.png"
+          data-aos="zoom-out"
+          alt=""
+          class="contact-us-img"
+        />
 
-        <a href="#" class="contact-img-social-link">
+        <a
+          href="#"
+          class="contact-img-social-link"
+          data-aos="zoom-in-up"
+          data-aos-delay="250"
+        >
           <img src="img/instagram.png" alt="" />
         </a>
 
-        <a href="#" class="contact-img-social-link">
+        <a
+          href="#"
+          class="contact-img-social-link"
+          data-aos="zoom-in-up"
+          data-aos-delay="300"
+        >
           <img src="img/facebook.png" alt="" />
         </a>
 
-        <a href="#" class="contact-img-social-link">
+        <a
+          href="#"
+          class="contact-img-social-link"
+          data-aos="zoom-in-up"
+          data-aos-delay="350"
+        >
           <img src="img/twitter.png" alt="" />
         </a>
 
-        <a href="#" class="contact-img-social-link">
+        <a
+          href="#"
+          class="contact-img-social-link"
+          data-aos="zoom-in-up"
+          data-aos-delay="400"
+        >
           <img src="img/youtube.png" alt="" />
         </a>
       </div>
@@ -448,7 +507,7 @@
     </footer>
 
     <!-- scripts -->
-
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="app.js"></script>
   </body>
 </html>

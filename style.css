@@ -336,13 +336,17 @@ section {
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%) scaleY(0);
   width: 20.5rem;
   height: 35.5rem;
   background: var(--background-gradients);
   border-radius: 10rem;
   z-index: -1;
   transition: 0.25s;
+}
+
+.about-us-img.aos-animate::before {
+  transform: translate(-50%, -50%) scaleY(1);
 }
 
 .about-us-img img {
